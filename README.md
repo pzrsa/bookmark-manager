@@ -12,7 +12,15 @@ The website will have the following specification:
 | Objects  | Messages |
 | -------- | -------- |
 | Bookmark | read     |
-| List     | display  |
+
+- Add new bookmarks
+  As a user,
+  so I can go back to a website,
+  I would like to add a bookmark.
+
+| Objects  | Messages |
+| -------- | -------- |
+| Bookmark | add      |
 
 ## How to set up project
 
