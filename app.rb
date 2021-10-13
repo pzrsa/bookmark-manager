@@ -8,7 +8,7 @@ class BookmarkManager < Sinatra::Base
   end
 
   get "/" do
-    "Hello world!"
+    "Welcome to the Bookmark Manager! Here you can store all your favourite websites."
   end
 
   get "/bookmarks" do
