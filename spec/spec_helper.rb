@@ -14,6 +14,7 @@ require "rspec"
 require "simplecov"
 require "simplecov-console"
 require "./spec/setup_test_db"
+require "bookmark"
 
 # Tell Capybara to talk to BookmarkManager
 Capybara.app = BookmarkManager
