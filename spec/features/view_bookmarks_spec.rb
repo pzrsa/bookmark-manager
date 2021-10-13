@@ -1,8 +1,8 @@
 feature "view bookmarks" do
   scenario "user will view all bookmarks saved" do
     visit("/bookmarks")
-    expect(page).to have_content("https://www.google.co.uk/")
-    expect(page).to have_content("https://www.elsevier.com/en-gb")
-    expect(page).to have_content("https://www.moogmusic.com/")
+    expect(page).to have_content("http://www.makersacademy.com/")
+    expect(page).to have_content("http://www.google.com/")
+    expect(page).to have_content("http://www.destroyallsoftware.com")
   end
 end
