@@ -9,7 +9,7 @@
 <body>
     <ul>
     <% @bookmarks.each do |bookmark| %>
-        <h1><li><%= bookmark %></li></h1>
+        <a href="<%= bookmark[:url] %>" target="_blank"><h1><li><%= bookmark[:title] %></li></h1></a>
     <% end %>
     </ul>
     

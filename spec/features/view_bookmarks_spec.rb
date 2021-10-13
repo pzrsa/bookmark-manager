@@ -2,14 +2,14 @@ feature "view bookmarks" do
   scenario "user will view all bookmarks saved" do
     db = PG.connect(dbname: "bookmark_manager_test")
 
-    Bookmark.add("http://www.makersacademy.com/")
-    Bookmark.add("http://www.google.com/")
-    Bookmark.add("http://www.destroyallsoftware.com")
+    Bookmark.add("Makers Academy", "http://www.makersacademy.com/")
+    Bookmark.add("Google", "http://www.google.com/")
+    Bookmark.add("Destroy Software", "http://www.destroyallsoftware.com")
 
     visit("/bookmarks")
 
-    expect(page).to have_content("http://www.makersacademy.com/")
-    expect(page).to have_content("http://www.google.com/")
-    expect(page).to have_content("http://www.destroyallsoftware.com")
+    expect(page).to have_content("Makers Academy")
+    expect(page).to have_content("Google")
+    expect(page).to have_content("Destroy Software")
   end
 end
