@@ -33,10 +33,11 @@ bundle
 
 ### Database setup
 
-Connect to `psql` and create the database.
+Connect to `psql` and create the production and testing databases.
 
 ```
 CREATE DATABASE bookmark_manager;
+CREATE DATABASE bookmark_manager_test;
 ```
 
 Then create the tables by running the SQL scripts in `db/migrations`.
